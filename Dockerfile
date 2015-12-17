@@ -5,7 +5,7 @@
 #
 
 # Pull base image.
-FROM dockerfile/python
+FROM quay.io/chronojam/python
 
 # Install Node.js
 RUN \
