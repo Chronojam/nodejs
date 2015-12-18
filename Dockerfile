@@ -10,9 +10,9 @@ FROM quay.io/chronojam/python
 # Install Node.js
 RUN \
   cd /tmp && \
-  wget http://nodejs.org/dist/node-latest.tar.gz && \
-  tar xvzf node-latest.tar.gz && \
-  rm -f node-latest.tar.gz && \
+  wget http://nodejs.org/dist/v4.1.1/node-v4.1.1.tar.gz && \
+  tar xvzf node-v4.1.1.tar.gz && \
+  rm -f node-v4.1.1.tar.gz && \
   cd node-v* && \
   ./configure && \
   CXX="g++ -Wno-unused-local-typedefs" make && \
